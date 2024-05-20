@@ -8,6 +8,11 @@
     <title>Reserva</title>
 </head>
 <body>
+<div>
+    <?php
+    include "header.php";
+    ?>
+  </div> 
     <div class="container-fluid">
        
         <form  action="autenticacao.php" method="post">

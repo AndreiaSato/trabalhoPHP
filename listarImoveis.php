@@ -8,6 +8,11 @@
     <title>Listar imoveis</title>
 </head>
 <body>
+<div>
+    <?php
+    include "header.php";
+    ?>
+  </div> 
  <div class="container">
  <?php
   include 'conectaBanco.php'; // conectar com o banco

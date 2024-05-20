@@ -1,0 +1,19 @@
+.menu-principal{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+.logo{
+
+}
+.logo-img{
+    height: 100px;
+    width: 100px;
+}
+.navegacao a{
+    width: 100px;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+}

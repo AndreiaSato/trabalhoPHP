@@ -8,6 +8,11 @@
     <title>Imovel</title>
 </head>
 <body>
+<div>
+    <?php
+    include "header.php";
+    ?>
+  </div> 
 <div class="main">
         <h2>Formulário de Cadastro</h2>
         <form action="addImovel.php" method="post">

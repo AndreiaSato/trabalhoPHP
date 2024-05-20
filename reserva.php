@@ -10,6 +10,11 @@ $contrato = $_GET['contrato'];
     <title>reserva</title>
 </head>
 <body>
+<div>
+    <?php
+    include "header.php";
+    ?>
+  </div> 
     <form action="addreserva.php" method="post">
         <div>
             <input  type="hidden" name="id" value="<?php echo $idimovel; ?>"> 
