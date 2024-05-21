@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Imagens e Botão Submit</title>
     <style>
         
-        img {
-            width: 500px;
-            height: 500px;
-            margin-right: 30px;
+        .image-container {
+            width: 100%;
+            height: auto;
         }
+
     </style>
 </head>
 <body>
@@ -20,27 +19,29 @@
     <?php
     include "header.php";
     ?>
-  </div> 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6">
-                <figure >
-                    <img src="\reserva\estudante.png" type= "submit" title="estudante" method = "post" action="estudante.php">  
-                </figure>
-            </div>
-            
-            <div class="col-6">
-                <figure >
-                    <img src="\reserva\proprietario.png" type="submit" title="proprietario" method="post" action="proprietario.php" >
-                </figure>
+</div> 
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-3">
+            <div class="image-container">
+                <a href="estudante.php"><img class="image-container" src="\reserva\estudante.png" title="estudante"  action="estudante.php" class="border border-dark"></a>
             </div>
         </div>
+        <div class="col-2"></div>
+        <div class="col-3">
+            <div class="image-container">
+                <a href="proprietario.php"><img class="image-container" src="\reserva\proprietario.png" title="proprietario" action="proprietario.php" class= "border border-dark"></a>
+            </div>
+        </div>
+        <div class="col-2"></div>
     </div>
+</div>
 
     <!DOCTYPE html>
 <html>
 
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
@@ -86,7 +87,7 @@
             font-size: 1.4em;
         }
     </style>
-</head>
+</head> -->
 
 <!-- <body>
     <h1>Card</h1>

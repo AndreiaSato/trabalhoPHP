@@ -33,6 +33,25 @@
         }
     }
   ?>
+
+<dl class="row">
+  <dt class="col-sm-3">Identificação da reserva:</dt>
+  <dd class="col-sm-9"><?php echo $userdata['id']?></dd>
+
+  <dt class="col-sm-3">Contrato atual:</dt>
+  <dd class="col-sm-9">
+    <p><?php  echo $userdata['contrato'] ?></p>
+  </dd>
+
+  <dt class="col-sm-3">Tipo de moradia: </dt>
+  <dd class="col-sm-9"><p><?php echo $userdata['tipo'] ?></p></dd>
+
+  <dt class="col-sm-3 text-truncate">Descrição do Imóvel</dt>
+  <dd class="col-sm-9"><p><?php echo $userdata['descricao'] ?></p></dd>
+
+  <dt class="col-sm-3">Valor do aluguel:</dt>
+      <dd class="col-sm-8"><p><?php echo $userdata['valor']?></p></dd>
+</dl>
  </div>
     
 </body>

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Formulario de Contato</title>
 </head>
+<style>
+  img{
+    width: 100%;
+  }
+</style>
 <body>
   <div>
     <?php

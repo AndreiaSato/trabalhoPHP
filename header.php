@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="estilo.css">
 <header>
-    <div class="menu-principal navbar bg-primary">
-        <div class="logo"><a href="index.php"><img class="logo-img" src="Logo.jpg"></a></div>
+    <div class="menu-principal navbar bg-dark">
+        <div class="logo"><a href="index.php"><img class="logo-img" src="logomarca.jpg"></a></div>
         <div class="navegacao"><a href="listarImoveis.php">Reservas</a></div>
         <?php
         session_start();
