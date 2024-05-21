@@ -13,7 +13,7 @@ VALUES ('$cpf', '$nome', '$email', '$telefone', '$inst',' $senha')";
 $banco->query($sql);
 
 if($banco->affected_rows >= 1){
-    echo "<p> Usuário  cadastrado com sucesso!</p>";
+    header('location: login.php');
 }
 
 $banco->close();

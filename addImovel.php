@@ -27,7 +27,7 @@ if($banco->affected_rows >= 1){ // se tiver uma linha ou mais afetada do banco..
     $sql= "INSERT INTO imovel (tipo, valor, contrato, descricao, situacao, proprietario_id, endereco_id)
      VALUES ('$tipo', '$valor', '$contrato','$descricao', 'disponivel', '$cpf', '$endereco')"; //inserir dados do imovel no banco
     $banco->query($sql);
-    
+    header('location: listarImoveis.php');
 }
 
 $banco->close();

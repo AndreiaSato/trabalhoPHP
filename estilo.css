@@ -1,22 +1,76 @@
-.menu-principal{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+* {
+    box-sizing: border-box;
 }
-.logo{
-
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
 }
-.logo-img{
-    height: 100px;
-    width: 100px;
-}
-.navegacao a{
-    width: 100px;
-    text-align: right;
-    text-decoration: none;
-    color: #fff;
+body{
+    background-color: lightgray;
+    margin: 0%;
+    font-family: Oswald;
     font-size: large;
-    font-weight: bold;
 }
+.cabecalho{
+    background-color: #212429;
+    padding: 1%;
+    border-bottom: solid skyblue;
+    box-sizing: content-box; /* ignora o tamanho da borda para contar o tamanho do elemnto*/
+}
+.logo {
+    display: inline-block;
+    height: 80px;
+}
+
+.logo img {
+    height: 100%;
+}
+.menu-toggle{
+    float: right;
+    color: #eee;
+    background-color: #555;
+    border: solid 1px #777;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.3em;
+}
+
+.menu a {
+    padding: 15px;
+}
+
+.autenticacao {
+    float: right;
+    height: 80px;
+    padding: 25px;
+}
+.menu a:hover,
+        .menu a.selected {
+            background-color: #4faddb;
+            color: #000;
+        }
+        .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin: 10px;
+        }
 
 
 /*pagina login*/
@@ -99,5 +153,5 @@ text-align: center;
 font-size: 12px;
 opacity: 0.8;
 color: #fff;
-text-decoration: none;
+text-decoration: none;
 }

@@ -9,7 +9,6 @@
     <title>Reserva</title>
    
 </head>
-<script>
   
 <body>
 
@@ -18,8 +17,6 @@
     include "header.php";
     ?>
   </div> 
- 
-
 <div id="login">
 
  <form class="card">
@@ -30,7 +27,7 @@
   <div class=" cart-content row mt-5">
     <div class=" cart-content-area col-6 m-3">
       <label for="usuario" >Usuário</label>
-      <input type="text" id= "usuario"  class="form-control border border-dark" placeholder="digite aqui seu email" >
+      <input type="text" id= "usuario"  class="form-control border border-dark" placeholder="digite aqui seu email">
     </div>
     <div class=" cart-content-area col-5 m-3"> 
       <label for="password">Senha</label>
@@ -41,11 +38,8 @@
   <div class="card-footer">
     <input type="submit" values="login" class="submit">
   </div>
-
-</form>
-</div>
- </div>
-</div>
+  </div>
+  </form>
 </div>
 </body>
 </html>
