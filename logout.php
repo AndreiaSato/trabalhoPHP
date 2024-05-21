@@ -7,5 +7,5 @@ unset($_SESSION['senha']);
 unset($_SESSION ['telefone']);
 unset($_SESSION ['instituicao_ensino']);
 
-header("Location: index.php");
+header("Location:index.php");
 ?>

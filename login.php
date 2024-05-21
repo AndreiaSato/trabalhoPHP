@@ -17,9 +17,10 @@
     include "header.php";
     ?>
   </div> 
+
 <div id="login">
 
- <form class="card">
+ <form class="card ">
 
   <div class="card-header">
     <h2>Login</h2>
@@ -36,7 +37,8 @@
   </div>
 
   <div class="card-footer">
-    <input type="submit" values="login" class="submit">
+    <a href="autenticacao.php"><input type="submit" values="login" class="submit"></a>
+   
   </div>
   </div>
   </form>
