@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'conectaBanco.php';
+if (isset($_SESSION['cpf'])){
 $tipo = $_POST ['tipo'];
 $valor = $_POST ['valor'];
 $contrato = $_POST ['contrato'];
@@ -31,5 +32,5 @@ if($banco->affected_rows >= 1){ // se tiver uma linha ou mais afetada do banco..
 }
 
 $banco->close();
-
+}
 ?>

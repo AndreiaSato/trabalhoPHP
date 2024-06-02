@@ -1,5 +1,6 @@
 <?php
 include 'conectaBanco.php';
+if(isset($_POST ['nome']) && isset($_POST ['cpf'])){
 $nome = $_POST ['nome'];
 $cpf = $_POST ['cpf'];
 $email = $_POST ['email'];
@@ -17,5 +18,5 @@ if($banco->affected_rows >= 1){
 }
 
 $banco->close();
-
+}
 ?>

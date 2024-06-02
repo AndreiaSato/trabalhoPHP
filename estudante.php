@@ -13,23 +13,42 @@
     include "header.php";
     ?>
   </div> 
-<div class="main">
+<div id="estudante">
+        
+        <form action="addestudante.php" method="post" class="card"  style="width: 40%">
+        <div class="card-header">
         <h2>Formulário de Cadastro</h2>
-        <form action="addestudante.php" method="post">
-            <label for="nome">Nome:</label>
-            <input class="form-control" type="text" id="nome" name="nome" required>
-            <label for="cpf">CPF:</label>
-            <input class="form-control" type="text" id="cpf" name="cpf" required>
-            <label for="email">Email:</label>
-            <input class="form-control" type="text" id="email" name="email" required>
-            <label for="telefone">Telefone:</label>
-            <input class="form-control"type="tel" id="telefone" name="telefone" required>
-            <label class="form-control" for="inst">Instituição de Ensino:</label>
-            <input class="form-control" type="text" id="inst" name="inst" required>
-            <label for="senha">Senha:</label>
-            <input class="form-control" type="password" id="senha" name="senha" required>
-            <button type="submit">Cadastrar</button>
-        </form>
-    </div>
+        <div class="cart-content row mt-5">
+            <div class=" cart-content-area col-11 m-2">
+                <label for="nome">Nome:</label>
+                <input class="form-control border border-dark" type="text" id="nome" name="nome" required>
+            </div>
+            <div class=" cart-content-area col-11 m-2">
+                <label for="cpf">CPF:</label>
+                <input class="form-control border border-dark" type="text" id="cpf" name="cpf" required>
+            </div>
+            <div class=" cart-content-area col-11 m-2">
+                <label for="email">Email:</label>
+                <input class="form-control border border-dark" type="text" id="email" name="email" required>
+            </div>
+            <div class=" cart-content-area col-11 m-2">
+                <label for="telefone">Telefone:</label>
+                <input class="form-control border border-dark"type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class=" cart-content-area col-11 m-2">
+                <label for="inst">Instituição de Ensino:</label>
+                <input class="form-control border border-dark" type="text" id="inst" name="inst" required>
+            </div>
+            <div class=" cart-content-area col-11 m-2">
+                <label for="senha">Senha:</label>
+                <input class="form-control border border-dark" type="password" id="senha" name="senha" required>  
+            </div>
+        </div>
+        <div class= "card-footer">
+            <button type="submit" values="login" class="submit">Cadastrar</button>
+        </div>
+    </form>
+</div>
+</div>
 </body>
 </html>

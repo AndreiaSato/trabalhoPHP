@@ -20,24 +20,24 @@
 
 <div id="login">
 
- <form class="card ">
+ <form class="card " style="width: 30%;" action="autenticacao.php" method="post">
 
   <div class="card-header">
     <h2>Login</h2>
 
   <div class=" cart-content row mt-5">
-    <div class=" cart-content-area col-6 m-3">
-      <label for="usuario" >Usuário</label>
-      <input type="text" id= "usuario"  class="form-control border border-dark" placeholder="digite aqui seu email">
+    <div class=" cart-content-area col-10 m-3">
+      <label for="usuario" >E-mail</label>
+      <input type="text" id= "usuario"  class="form-control border border-dark" placeholder="digite aqui seu email" name="email" required >
     </div>
-    <div class=" cart-content-area col-5 m-3"> 
+    <div class=" cart-content-area col-10 m-3"> 
       <label for="password">Senha</label>
-      <input type="namber" class="form-control border border-dark" placeholder="digite sua senha">
+      <input type="password" class="form-control border border-dark" placeholder="digite sua senha" name="senha" required>
     </div>
   </div>
 
   <div class="card-footer">
-    <a href="autenticacao.php"><input type="submit" values="login" class="submit"></a>
+    <input type="submit" values="login" class="submit">
    
   </div>
   </div>

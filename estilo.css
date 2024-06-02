@@ -75,19 +75,73 @@ body{
 
 /*pagina login*/
 
-body{
-padding: 0;
-margin: 0;
-background-color: #454d6b;
-}
+
 
 #login{
 display:flex;
 align-items: center;
 justify-content: center;
-height: 100vh;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+height: 80vh;
+font-family: Arial, Helvetica, sans-serif;
 }
+#estudante{
+display:flex;
+align-items: center;
+justify-content: center;
+height: 110vh;
+font-family: Arial, Helvetica, sans-serif;
+}
+.proprietario{
+display:flex;
+align-items: center;
+justify-content: center;
+height: 120vh;
+font-family: Arial, Helvetica, sans-serif;
+}
+.imoveis{
+    border: solid 1px #777575;
+    border-radius: 10px;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 10px 30%;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.botao{
+    text-decoration: none;
+    border-radius: 10px;
+width: 60%;
+height: 40px;
+background-color: #a13854;
+border: none;
+color: #e1e1e1;
+margin:  10px 0;
+}
+.reserva{
+    border: solid 1px #777575;
+    border-radius: 10px;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 10px 40%;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#formImovel{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.reserva .botao{
+    margin: 10px 20%;
+}
+
 
 .card{
 background-color: rgba(19, 19, 19, 0.3);
@@ -97,23 +151,12 @@ width: 280px;
 }
 
 .card-header{
-padding-bottom: 50px;
+padding-bottom: 20px;
 opacity: 0.8;
 color: #fff;
 }
 
-.card-header::after{
-content: "";
-width:70px;
-height: 1px;
-background-color: #fff;
-display: block;
-margin-top: -17px;
-margin-left: -5px;
-}
-
 .card-content label{
-color: #fff;
 font-size: 12px;
 opacity: 0,8;
 }
@@ -129,18 +172,22 @@ margin-top: 10px;
 padding: 0 5px;
 background-color: transparent;
 border: none;
-border-bottom: 1px solid #e1e1e1;
 outline: none;
-color: #fff;
+
 }
 
 .card-footer{
+    border: none;
 display: flex;
 flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
 }
 
 .card-footer .submit{
-width: 100%;
+border-radius: 10px;
+width: 60%;
 height: 40px;
 background-color: #a13854;
 border: none;
@@ -152,6 +199,5 @@ margin:  10px 0;
 text-align: center;
 font-size: 12px;
 opacity: 0.8;
-color: #fff;
 text-decoration: none;
 }

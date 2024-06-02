@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'conectaBanco.php';
-
+if(isset($_POST ['email']) && isset($_POST ['senha'])){
 $email = $_POST ['email'];
 $senha = $_POST ['senha'];
 
@@ -35,7 +35,7 @@ if($usuario){
         }
     }
 }
-
+}
 
 $banco->close();
 ?>

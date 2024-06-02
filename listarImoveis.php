@@ -24,36 +24,33 @@
     }
     else{
         while($userdata = $busca->fetch_assoc()){ // laço de repetição para exibir todos os imoveis disponiveis no banco
-            echo $userdata['id'].'<br>';
-            echo $userdata['contrato'].'<br>';
-            echo $userdata['tipo'].'<br>';
-            echo $userdata['descricao'].'<br>';
-            echo $userdata['valor'].'<br>';
-            echo "<a href='reserva.php?idimovel=$userdata[id]&contrato=$userdata[contrato]'>Alugar</a>"; //link direciona para a pagina de reserva
+            echo " <div class='imoveis' >
+    
+            <dt > <h2>Identificação da reserva:</h2></dt>
+            <dd >$userdata[id]</dd>
+          
+            <dt >Contrato atual:</dt>
+            <dd >
+              <p>$userdata[contrato]</p>
+            </dd>
+          
+            <dt >Tipo de moradia: </dt>
+            <dd ><p>$userdata[tipo]</p></dd>
+          
+            <dt class=' text-truncate'>Descrição do Imóvel</dt>
+            <dd ><p>$userdata[descricao]</p></dd>
+          
+            <dt >Valor do aluguel:</dt>
+                <dd ><p>$userdata[valor]</p></dd>
+          </dl>";
+          echo "<a class='botao' href='reserva.php?idimovel=$userdata[id]&contrato=$userdata[contrato]'>Alugar</a>";
+          echo "</div>"; //link direciona para a pagina de reserva
         }
     }
   ?>
-
-<dl class="row">
-  <dt class="col-sm-3">Identificação da reserva:</dt>
-  <dd class="col-sm-9"><?php echo $userdata['id']?></dd>
-
-  <dt class="col-sm-3">Contrato atual:</dt>
-  <dd class="col-sm-9">
-    <p><?php  echo $userdata['contrato'] ?></p>
-  </dd>
-
-  <dt class="col-sm-3">Tipo de moradia: </dt>
-  <dd class="col-sm-9"><p><?php echo $userdata['tipo'] ?></p></dd>
-
-  <dt class="col-sm-3 text-truncate">Descrição do Imóvel</dt>
-  <dd class="col-sm-9"><p><?php echo $userdata['descricao'] ?></p></dd>
-
-  <dt class="col-sm-3">Valor do aluguel:</dt>
-      <dd class="col-sm-8"><p><?php echo $userdata['valor']?></p></dd>
-</dl>
  </div>
-    
+ 
+
 </body>
 </html>
 
