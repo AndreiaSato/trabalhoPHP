@@ -25,13 +25,13 @@
         <div class="col-2"></div>
         <div class="col-3">
             <div class="image-container">
-                <a href="estudante.php"><img class="image-container" src="\reserva\estudante.png" title="estudante"  action="estudante.php" class="border border-dark"></a>
+                <a href="estudante.php"><img class="image-container" src="../imagens/estudante.png" title="estudante"  action="estudante.php" class="border border-dark"></a>
             </div>
         </div>
         <div class="col-2"></div>
         <div class="col-3">
             <div class="image-container">
-                <a href="proprietario.php"><img class="image-container" src="\reserva\proprietario.png" title="proprietario" action="proprietario.php" class= "border border-dark"></a>
+                <a href="proprietario.php"><img class="image-container" src="../imagens/proprietario.png" title="proprietario" action="proprietario.php" class= "border border-dark"></a>
             </div>
         </div>
         <div class="col-2"></div>
