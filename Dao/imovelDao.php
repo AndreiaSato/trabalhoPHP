@@ -1,4 +1,15 @@
 <?php
+include_once 'conectaBanco.php';
+class imovelDao{
+    public function inserir( Imovel $imovel){
+        try(
+            $sql = "INSERT INTO imovel ("
+        )
+    }
+}
+
+
+
 session_start();
 include 'conectaBanco.php';
 if (isset($_SESSION['cpf'])){

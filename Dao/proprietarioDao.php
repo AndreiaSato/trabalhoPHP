@@ -1,20 +1,22 @@
 <?php
 include 'conectaBanco.php';
-$nome = $_POST ['nome'];
-$cpf = $_POST ['cpf'];
-$email = $_POST ['email'];
-$telefone = $_POST['telefone'];
-$senha = $_POST ['senha'];
-
-$sql = "INSERT INTO proprietario
-VALUES ('$cpf', '$nome', '$email', '$telefone',' $senha')";
-
-$banco->query($sql);
-
-if($banco->affected_rows >= 1){
-    header('location: login.php');
+class proprietarioDao{
+    public function inserir (Proprietario $proprietario){
+        try{
+            $sql = "INSERT INTO proprietario (nome, cpf, email, telefone, senha)
+            VALUES (:nome, :cpf, :email, :telefone, :senha)";
+            $conn = conectaBanco::getConnection()->prepare($sql);
+            $conn-> bindValue(":nome", $proprietario->getNome());
+            $conn-> bindValue(":cpf", $proprietario->getCpf());
+            $conn-> bindValue(":email", $proprietario->getEmail());
+            $conn-> bindValue(":telefone", $proprietario->getTelefone());
+            $conn-> bindValue(":senha", $proprietario->getSenha());
+            return $conn->execute();
+       } catch(Exception $ex){
+        echo "<p> erro ao inserir estudante</p> $ex";
+    }
+    }
 }
 
-$banco->close();
 
 ?>

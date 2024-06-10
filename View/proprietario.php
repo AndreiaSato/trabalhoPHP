@@ -46,7 +46,7 @@
                 </div>
 
             <div class="card-footer">
-                <button type="submit" class="submit" values="login">Cadastrar</button>
+                <button type="submit" class="submit" values="login" name="login">Cadastrar</button>
             </div>
         </div>
     </form>
