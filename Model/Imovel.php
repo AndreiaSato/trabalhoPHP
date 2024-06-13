@@ -7,14 +7,8 @@ class Imovel{
     private $descricao;
     private $proprietario;
     private $endereco;
+    private $situacao;
 
-    public function __construct($id, $tipo,$valor, $contrato, $descricao){
-        $this->id = $id;
-        $this->tipo = $tipo;
-        $this->valor = $valor;
-        $this->contrato = $contrato;
-        $this->descricao = $descricao;
-    }
     
     public function getProprietario(){
         return $this->proprietario;
@@ -66,6 +60,13 @@ class Imovel{
 
     public function setDescricao($descricao){
         $this->descricao = $descricao;
+    }
+    public function getSituacao(){
+        return $this->situacao;
+    }
+
+    public function setSituacao($situacao){
+        $this->situacao = $situacao;
     }
 
     

@@ -67,7 +67,7 @@ class Endereco{
         return $this->cep;
     }
 
-    public function Cep($cep){
+    public function setCep($cep){
         $this->cep = $cep;
     }
 }

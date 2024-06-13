@@ -16,14 +16,17 @@
  <div class="container">
  <?php
   include '../Dao/conectaBanco.php'; // conectar com o banco
-    $sql = "SELECT * FROM imovel WHERE situacao = 'disponivel' "; //procura todos os imoveis disponiveis
-    $busca = $banco->query($sql);
 
-    if ($busca->num_rows == 0){
+    $sql = "SELECT * FROM imovel WHERE situacao = 'disponivel' "; //procura todos os imoveis disponiveis
+   $conn = conectaBanco::getConnection()->prepare($sql);
+   $conn->execute();
+
+
+    if ($conn->fetch() == 0){
         echo 'Nenhum resultado encontrado!'; 
     }
     else{
-        while($userdata = $busca->fetch_assoc()){ // laço de repetição para exibir todos os imoveis disponiveis no banco
+        while($userdata = $conn->fetch(PDO::FETCH_ASSOC)){ // laço de repetição para exibir todos os imoveis disponiveis no banco
             echo " <div class='imoveis' >
     
             <dt > <h2>Identificação da reserva:</h2></dt>

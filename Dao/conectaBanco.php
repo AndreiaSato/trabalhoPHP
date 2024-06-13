@@ -13,7 +13,7 @@ class conectaBanco{
     
             try{
                 $conn = new PDO("mysql:host=$host;port=$port;dbname=$database", $user, $pass);
-                echo "conectado"; 
+                // echo "conectado"; 
                 return $conn;
     
             }catch(PDOException $ex){ // exceção de erro

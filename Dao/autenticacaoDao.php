@@ -5,12 +5,13 @@ class autenticacaoDao{
         try{
          $sql = "SELECT * FROM estudante WHERE email = '$email' and senha = '$senha'";
          $conn = conectaBanco::getConnection()->prepare($sql);
-         $usuario = $conn->execute();
+         $conn->execute();
          if(!isset($usuario)){
-            $sql = "SELECT * FROM proprietario WHERE email = '$email' and senha = '$senha'";
-            $conn = conectaBanco::getConnection()->prepare($sql);
-            $usuario = $conn->execute();
-         }
+             $sql = "SELECT * FROM proprietario WHERE email = '$email' and senha = '$senha'";
+             $conn = conectaBanco::getConnection()->prepare($sql);
+             $conn->execute();
+             }
+            $usuario = $conn->fetch(PDO::FETCH_ASSOC);
          return $usuario;
 
         }catch (Exception $ex){

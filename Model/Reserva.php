@@ -7,12 +7,6 @@ class Reserva{
     private $estudante;
     private $imovel;
 
-    public function __construct($id, $dataInicial, $dataFinal, $situacao){
-        $this->id = $id;
-        $this->dataInicial = $dataInicial;
-        $this->dataFinal = $dataFinal;
-        $this->situacao = $situacao;
-    }
 
     public function getId(){
         return $this->id;

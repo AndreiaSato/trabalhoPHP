@@ -68,7 +68,7 @@
                     <input class="form-control" type="text" name="cep" class="cep" required>
                 </div>
                 <div class="card-footer">
-                    <input type="submit" class="submit">
+                    <input type="submit" class="submit" name="submit" value="Enviar">
                 </div>
                 </div>
                 </div>

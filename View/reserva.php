@@ -29,7 +29,7 @@ $contrato = $_GET['contrato'];
             </div>
 
             <div>
-                <input class="botao" type="submit">
+                <input class="botao" type="submit" name="submit" value="enviar">
             </div>
         </div>
     </form>

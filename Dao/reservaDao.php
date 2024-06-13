@@ -1,4 +1,35 @@
 <?php
+include_once 'conectaBanco.php';
+class reservaDao{
+    public function inserir(Reserva $reserva){
+        try{
+            $sql = "INSERT INTO reserva (dataInicial, dataFinal, situacao, estudante_id, imovel_id)VALUES(:dataInicial,
+            :dataFinal, 'true', :estudante_id, :imovel_id)";
+            $conn = conectaBanco::getConnection()->prepare($sql);
+            $conn-> bindValue(":dataInicial", $reserva->getDataInicial());
+            $conn-> bindValue(":dataFinal", $reserva->getDataFinal());
+            $conn-> bindValue(":estudante_id", $reserva->getEstudante());
+            $conn-> bindValue(":imovel_id", $reserva->getImovel());
+            $conn->execute();
+
+
+
+
+        }catch(Exception $ex){
+        echo "<p> erro ao inserir estudante</p> $ex";
+    }
+    }
+}
+
+
+  
+
+
+
+
+
+
+
 include 'conectaBanco.php';
 session_start();
 if(isset($_SESSION['cpf'])){
