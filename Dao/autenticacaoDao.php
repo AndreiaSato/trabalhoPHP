@@ -6,7 +6,7 @@ class autenticacaoDao{
          $sql = "SELECT * FROM estudante WHERE email = '$email' and senha = '$senha'";
          $conn = conectaBanco::getConnection()->prepare($sql);
          $conn->execute();
-         if(!isset($usuario)){
+         if(isset($usuario)){
              $sql = "SELECT * FROM proprietario WHERE email = '$email' and senha = '$senha'";
              $conn = conectaBanco::getConnection()->prepare($sql);
              $conn->execute();
