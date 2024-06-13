@@ -7,18 +7,18 @@ Classes:
 -> cadastro reserva
 
 Estudante
-
+- id  (chave primária)
 - nome
-- cpf (chave primária)
+- cpf 
 - email
 - telefone
 - instituição de ensino
 - senha
 
 Proprietário
-
+- id (chave primária)
 - nome
-- cpf (chave primária)
+- cpf 
 - email
 - senha
 - telefone

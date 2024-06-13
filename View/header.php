@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="estilo.css">
 <header class="cabecalho">
-        <div class="logo"><a href="index.php"><img class="logo-img" src="Logo.jpg"></a></div>
+        <div class="logo"><a href="index.php"><img class="logo-img" src="../imagens/Logo.jpg"></a></div>
         <nav class="menu">
             <ul>
                 <li><a href="listarImoveis.php">Reservas</a></li>

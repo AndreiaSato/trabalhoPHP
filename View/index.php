@@ -20,7 +20,7 @@
     ?>
   </div> 
   <div>
-    <img src="./Stay (3).png" alt="" width="1500">
+    <img src="../imagens/Stay (3).png" alt="" width="1500">
   </div>
 </body>
 </html>
