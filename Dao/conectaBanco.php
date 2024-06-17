@@ -3,7 +3,7 @@ class conectaBanco{
     static $conn;
 
     public static function getConnection(){
-        if(!isset($conn)){                 //isset = conjunto de dados (!isset = se não está vazia)
+        if(!isset($conn)){     //isset = conjunto de dados (!isset = se não está vazia)
 
             $database = "stayin";//coloque o nome de seu bd
             $user = "root";

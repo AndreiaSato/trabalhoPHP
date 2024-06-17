@@ -17,16 +17,15 @@
  <?php
   include '../Dao/conectaBanco.php'; // conectar com o banco
 
-    $sql = "SELECT * FROM imovel WHERE situacao = 'disponivel' "; //procura todos os imoveis disponiveis
+   $sql = "SELECT * FROM imovel WHERE situacao = 'disponivel' "; //procura todos os imoveis disponiveis
    $conn = conectaBanco::getConnection()->prepare($sql);
    $conn->execute();
 
 
-    if ($conn->fetch() == 0){
-        echo 'Nenhum resultado encontrado!'; 
-    }
-    else{
+   
         while($userdata = $conn->fetch(PDO::FETCH_ASSOC)){ // laço de repetição para exibir todos os imoveis disponiveis no banco
+          if(isset($userdata)){
+
             echo " <div class='imoveis' >
     
             <dt > <h2>Identificação da reserva:</h2></dt>
@@ -49,7 +48,8 @@
           echo "<a class='botao' href='reserva.php?idimovel=$userdata[id]&contrato=$userdata[contrato]'>Alugar</a>";
           echo "</div>"; //link direciona para a pagina de reserva
         }
-    }
+          }
+    
   ?>
  </div>
  

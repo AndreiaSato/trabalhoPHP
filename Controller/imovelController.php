@@ -25,7 +25,7 @@ $imovel->setDescricao($_POST['descricao']);
 $imovel->setProprietario($_SESSION['cpf']);
 $imovelDao->imovel($imovel);
 }
-
+header("location:../View/index.php");
 
 
 
